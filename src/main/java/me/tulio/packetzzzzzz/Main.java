@@ -2,7 +2,6 @@ package me.tulio.packetzzzzzz;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
-import com.comphenix.protocol.events.ListenerPriority;
 import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
@@ -22,6 +21,7 @@ public final class Main extends JavaPlugin implements Listener {
                 String[] args = message.split(" ");
                 for (String arg : args) {
                     if (arg.contains("for") || arg.contains("while")) {
+                        // Insert here your code result when you detect a loop
                         System.out.println("[Packetzzzzzzz] " + event.getPlayer().getName() + " tried to use a for loop!");
                         event.setCancelled(true);
                     }
