@@ -1,0 +1,6 @@
+name: Packetzzzzzz
+version: '${version}'
+main: me.tulio.packetzzzzzz.Main
+authors: [ TulioTriste ]
+softdepend:
+  - ProtocolLib
